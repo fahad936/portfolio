@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    background-image:url(OIP.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding:0 40px;
+    color: white
+}
+p{
+    color: black;
+}
+.ul_list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.ul_list li{
+    padding:0 10px;
+}
+.Contact_button{
+    height: 20px;
+    width: 100px;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin: 16px 0 0 0;
+}
+.main_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:8rem 0 0 0 ;
+}
+.main_section div{
+    padding: 0 50px;
+}
+.first h1{
+    color: white;
+    font-size: 20px;
+}
+.admission_now_button{
+    height: 25px;
+    width: 120px;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin: 16px 0 0 0;
+}
+.second{
+    height: 170px;
+    width: 200px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 30px;
+}
+.second h3{
+    margin: 10px 0 0 0;
+}
+.second input{
+    border: 1px solid lightgray;
+    margin: 0 0 12px 0;
+}
+.signup_button{
+     height: 25px;
+    width: 120px;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin: 16px 0 0 0;
+}
