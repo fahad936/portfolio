@@ -20,6 +20,10 @@ h2{
 }
 .clock{
     display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    
 }
 .clock div{
     margin: 5px;

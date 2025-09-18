@@ -2,6 +2,10 @@ const hourE1 =document.getElementById('hour')
 const minuteE1 =document.getElementById('minutes')
 const secondE1 =document.getElementById('seconds')
 const ampmE1 =document.getElementById('ampm')
+const ampmE1 =document.getElementById('ampm')
+const ampmE1 =document.getElementById('ampm')
+const ampmE1 =document.getElementById('ampm')
+
 
 
 function updateClock(){
@@ -27,7 +31,6 @@ function updateClock(){
     ampmE1.innerText = ampm
     setTimeout(() => {
         updateClock()
-    },1000 )
-
+    }, 1000);
 }
 updateClock()
