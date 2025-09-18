@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentence Algorithm</title>
+</head>
+<body>
+    <h2>Sentence Analyzer</h2>
+<label>Enter a sentence ending with a period:</label><br>
+<input type="text" id="sentenceInput"><br><br>
+<button onclick="analyzeSentence()">Analyze</button>
+<p id="lengthResult"></p>
+<p id="wordResult"></p>
+<p id="vowelResult"></p>
+
+<script>
+  function analyzeSentence() {
+    var sentence = document.getElementById("sentenceInput").value;
+    var length = 0;
+    var words = 1; 
+    var vowels = 0;
+    var vowelsList = ['a', 'e', 'i', 'o', 'u'];
+
+    for (var i = 0; i < sentence.length; i++) {
+      var char = sentence[i];
+      length = length + 1;
+
+      if (char === ' ') {
+        words = words + 1;
+      }
+
+      if (vowelsList.includes(char.toLowerCase())) {
+        vowels = vowels + 1;
+      }
+
+      if (char === '.') {
+        break;
+      }
+    }
+    document.getElementById("lengthResult").innerText = "Length: " + length;
+    document.getElementById("wordResult").innerText = "Words: " + words;
+    document.getElementById("vowelResult").innerText = "Vowels: " + vowels;
+  }
+</script>
+</body>
+</html>
