@@ -1,0 +1,92 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 2rem;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+/* Light theme */
+body.light {
+  --bg: #ffffff;
+  --text: #111111;
+  --card-bg: #f9f9f9;
+}
+
+/* Dark theme */
+body.dark {
+  --bg: #1f1f1f;
+  --text: #f0f0f0;
+  --card-bg: #2b2b2b;
+}
+
+/* Apply theme variables */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.fade-in:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.fade-in:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.fade-in:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
