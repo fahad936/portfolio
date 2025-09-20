@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Lip Gloss Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Lip Gloss Store</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+      <a href="#" id="cart-link">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <section class="products">
+    <h2>Our Collection</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="lip1.jpg" alt="Pink Gloss">
+        <h3>Pink Gloss</h3>
+        <p>$10</p>
+        <button onclick="addToCart('Pink Gloss', 10)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="lip2.jpg" alt="Nude Gloss">
+        <h3>Nude Gloss</h3>
+        <p>$12</p>
+        <button onclick="addToCart('Nude Gloss', 12)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="lip3.jpg" alt="Red Gloss">
+        <h3>Red Gloss</h3>
+        <p>$15</p>
+        <button onclick="addToCart('Red Gloss', 15)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Lip Gloss Store</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
